@@ -1,0 +1,24 @@
+
+var superhero = prompt("Superhero", "Batman");
+var city = prompt("city", "Gotham City");
+
+var alias = "";
+var saved = false;
+
+// Write your code below
+if (superhero == 'Batman' && city == 'Gotham City') {
+    alias = 'Bruce Wayne';
+    saved = true;
+} 
+else if (superhero === 'Superman' && city === 'Metropolis') {
+    alias = 'Clark Kent';
+    saved = true;
+} 
+else if (superhero === 'Spiderman' && city === 'New York City') {
+    alias ='Peter Parker';
+    saved = true;
+}
+
+if (saved=== true) {
+	console.log(superhero + ', living under the alias of ' + alias + 'saved the city of ' + city +'!');
+}
